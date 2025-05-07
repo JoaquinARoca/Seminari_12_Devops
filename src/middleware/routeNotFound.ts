@@ -1,6 +1,6 @@
-import { Request, Response, NextFunction } from 'express';
+import express, { Request, Response } from 'express';
 
-export function routeNotFound(req: Request, res: Response, next: NextFunction) {
+export function routeNotFound(req: Request, res: Response) {
     const error = new Error('Route Not Found');
 
     console.log(error);
