@@ -1,4 +1,4 @@
-import { Request, Response } from 'express';
+import express, { Request, Response } from 'express';
 
 export function routeNotFound(req: Request, res: Response) {
     const error = new Error('Route Not Found');
