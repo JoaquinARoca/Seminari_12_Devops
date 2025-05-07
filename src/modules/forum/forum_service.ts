@@ -2,6 +2,9 @@ import Forum, { IForum } from './forum_models.js';
 
 export const createEntry = async (forumData: IForum) => {
     const user = new Forum(forumData);
+
+const prueba: any = "esto debería bloquear el commit";
+
     return await user.save();
 };
 
