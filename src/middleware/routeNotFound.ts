@@ -1,7 +1,8 @@
 import express, { Request, Response } from 'express';
-import x from 'x-ray';
+
 
 const hola: any = 'mundo'; // ❌ viola @typescript-eslint/no-explicit-any
+const hola2: any = 'mundo'; // ❌ viola @typescript-eslint/no-explicit-any
 
 export function routeNotFound(req: Request, res: Response) {
     const error = new Error('Route Not Found');

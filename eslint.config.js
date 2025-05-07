@@ -17,6 +17,8 @@ export default [
     },
     rules: {
       ...eslintPluginTs.configs.recommended.rules,
+      '@typescript-eslint/no-explicit-any': 'error', // 👈 esto es clave
+      '@typescript-eslint/no-unused-vars': 'error',
     },
   },
 ];
