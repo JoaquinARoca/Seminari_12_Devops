@@ -1,10 +1,10 @@
-# #!/usr/bin/env sh
+#!/usr/bin/env sh
 
-# # ESLint v9.x usa "flat config", activamos explícitamente
-# export ESLINT_USE_FLAT_CONFIG=true
+# ESLint v9.x usa "flat config", activamos explícitamente
+export ESLINT_USE_FLAT_CONFIG=true
 
-# # Nos aseguramos de estar en la raíz del proyecto
-# cd "$(git rev-parse --show-toplevel)"
+# Nos aseguramos de estar en la raíz del proyecto
+cd "$(git rev-parse --show-toplevel)"
 
-# # Ejecutar lint-staged con configuración moderna
-# npx lint-staged
+# Ejecutar lint-staged con configuración moderna
+npx lint-staged
