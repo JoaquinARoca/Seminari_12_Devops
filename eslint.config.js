@@ -10,7 +10,8 @@ export default [
     languageOptions: {
       parser: parserTs,
       parserOptions: {
-        project: './tsconfig.json',
+        tsconfigRootDir: process.cwd(),
+        project: ['./tsconfig.json']
       },
     },
     plugins: {

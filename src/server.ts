@@ -5,6 +5,7 @@ import userRoutes from './modules/users/user_routes.js'; // Nota el .js al final
 import forumRoutes from './modules/forum/forum_routes.js'; // Nota el .js al final
 import { corsHandler } from './middleware/corsHandler.js';
 import { loggingHandler } from './middleware/loggingHandler.js';
+import { messageHandler } from './middleware/messageHandler.js';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
 
@@ -66,11 +67,11 @@ app.get('/', (req, res) => {
 //mongoose;
 mongoose
     .connect(process.env.MONGODB_URI || 'mongodb+srv://joan:1234@cluster0.3owhs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
-    .then(() => console.log('Connected to DB'))
-    .catch((error) => console.error('DB Connection Error:', error));
+    .then(() => messageHandler('Connected to DB','info'))
+    .catch((error) => messageHandler('DB Connection Error:'+error, 'error'));
 
 // Iniciar el servidor
 app.listen(LOCAL_PORT, () => {
-    console.log('Server listening on port: ' + LOCAL_PORT);
-    console.log(`Swagger disponible a http://localhost:${LOCAL_PORT}/api-docs`);
+    messageHandler('Server listening on port: ' + LOCAL_PORT, 'info');
+    messageHandler(`Swagger disponible a http://localhost:${LOCAL_PORT}/api-docs`,'info');
 });
