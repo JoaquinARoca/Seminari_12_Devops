@@ -5,7 +5,7 @@ import parserTs from '@typescript-eslint/parser';
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
   {
-    // 🟥 Reglas generales para todos los .ts
+    // Reglas generales para todos los .ts
     files: ['src/**/*.ts'],
     languageOptions: {
       parser: parserTs,
