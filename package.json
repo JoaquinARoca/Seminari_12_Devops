@@ -7,7 +7,7 @@
     "scripts": {
         "build": "tsc",
         "start": "tsc && node build/server.js",
-        "lint": "eslint src --ext .ts -f json -o eslint-report.json",
+        "lint": "eslint src --ext .ts",
         "prepare": "husky install"
     },
     "author": "",
