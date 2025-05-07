@@ -1,8 +1,6 @@
-import express, { Request, Response } from 'express';
+import { Request, Response } from 'express';
 
 
-const holaA: any = 'mundo'; // ❌ viola @typescript-eslint/no-explicit-any
-const holaB: any = 'mundo'; // ❌ viola @typescript-eslint/no-explicit-any
 
 export function routeNotFound(req: Request, res: Response) {
     const error = new Error('Route Not Found');

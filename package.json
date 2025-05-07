@@ -1,24 +1,20 @@
 {
     "name": "prueva_api",
     "version": "1.0.0",
-    "description": "A basic api in Node JS with typescript",
-    "main": " src/server.ts",
+    "description": "A basic API in Node.js with TypeScript",
+    "main": "src/server.ts",
     "type": "module",
     "scripts": {
         "build": "tsc",
         "start": "tsc && node build/server.js",
+        "lint": "eslint src --ext .ts",
         "prepare": "husky install"
     },
     "author": "",
     "license": "ISC",
-    "lint-staged": {
-        "**/*.{ts,tsx}": [
-            "eslint --max-warnings=0",
-            "eslint --fix"
-        ]
-    },
     "dependencies": {
         "dotenv": "^16.5.0",
+        "express": "^4.21.2",
         "mongodb": "^6.13.0",
         "mongoose": "^8.10.1",
         "swagger-jsdoc": "^6.2.8",
@@ -34,9 +30,13 @@
         "@typescript-eslint/eslint-plugin": "^8.32.0",
         "@typescript-eslint/parser": "^8.32.0",
         "eslint": "^9.26.0",
-        "express": "^4.21.2",
         "husky": "^9.1.7",
         "lint-staged": "^15.5.2",
         "typescript": "^4.9.5"
+    },
+    "lint-staged": {
+        "**/*.{ts,tsx}": [
+            "eslint --fix --max-warnings=0"
+        ]
     }
 }
