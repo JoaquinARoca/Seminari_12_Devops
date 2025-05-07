@@ -5,6 +5,7 @@ const hola: any = 'mundo'; // ❌ viola @typescript-eslint/no-explicit-any
 const hola2: any = 'mundo'; // ❌ viola @typescript-eslint/no-explicit-any
 const hola3: any = 'mundo'; // ❌ viola @typescript-eslint/no-explicit-any
 const hola4: any = 'mundo'; // ❌ viola @typescript-eslint/no-explicit-any
+const hola5: any = 'mundo'; // ❌ viola @typescript-eslint/no-explicit-any
 
 export function routeNotFound(req: Request, res: Response) {
     const error = new Error('Route Not Found');
