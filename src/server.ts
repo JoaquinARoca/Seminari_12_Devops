@@ -15,6 +15,8 @@ const app = express();
 
 const LOCAL_PORT = process.env.SERVER_PORT || 9000;
 
+const a = 1234;
+console.log("Esto debería marcarse como error en ESLint y sonar");
 // Configuración de Swagger
 const swaggerOptions = {
     definition: {
