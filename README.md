@@ -66,7 +66,7 @@ Integració completa amb SonarCloud
 
 Projecte: JoaquinARoca_Seminari_12_Devops
 
-Secrets i claus gestionats de forma segura
+Secrets i claus gestionats de forma segura, si
 
 ## Scripts utils
 
