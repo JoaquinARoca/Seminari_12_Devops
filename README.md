@@ -1,7 +1,7 @@
 # Devops tools + API
 
 ## Crèdits
-- Grup Seminari 1.
+- Grup Seminari 1
 
 ## Descripció
 Una API bàsica desenvolupada en Node.js amb TypeScript, utilitzant Express i Mongoose per a la gestió de dades en MongoDB. A més, inclou documentació amb Swagger i eines DevOps integrades:
