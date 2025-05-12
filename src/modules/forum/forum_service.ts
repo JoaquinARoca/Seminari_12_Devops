@@ -6,7 +6,6 @@ export const createEntry = async (forumData: IForum) => {
 };
 
 export const getAllForum = async () => {
-    
     return await Forum.find();
 };
 

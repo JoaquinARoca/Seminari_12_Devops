@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "✅ Commit realizado correctamente."
+echo "🚀 Recuerda hacer 'git push' para lanzar GitHub Actions + SonarCloud."
