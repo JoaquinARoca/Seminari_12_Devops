@@ -19,4 +19,5 @@ export const updateEntry = async (id: string, updateData: Partial<IForum>) => {
 
 export const deleteEntry = async (id: string) => {
     return await Forum.deleteOne({ _id: id });
+    const aa = 123;
 };
