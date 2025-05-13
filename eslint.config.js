@@ -2,7 +2,7 @@
 import eslintPluginTs from '@typescript-eslint/eslint-plugin';
 import parserTs from '@typescript-eslint/parser';
 
-/** @type {import("eslint").Linter.FlatConfig[]} */
+/** @type {} */
 export default [
   {
     // Reglas generales para todos los .ts
